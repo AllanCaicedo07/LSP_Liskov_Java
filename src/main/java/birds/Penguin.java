@@ -1,7 +1,7 @@
 package birds;
 
 /**
- * ✅ Penguin (Pingüino) — come y nada, pero NO vuela.
+ *  Penguin (Pingüino) — come y nada, pero NO vuela.
  *
  * No implementa Flyable — eso sería mentira.
  * Puede tener comportamientos propios (swim()) sin romper ningún contrato.

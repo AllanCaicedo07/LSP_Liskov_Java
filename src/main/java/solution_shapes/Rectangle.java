@@ -1,7 +1,7 @@
 package solution_shapes;
 
 /**
- * ✅ Rectangle correcto — hereda de Shape, no de Square ni al revés.
+ *  Rectangle correcto — hereda de Shape, no de Square ni al revés.
  * Tiene sus propios setters sin interferir con otros subtipos.
  */
 public class Rectangle extends Shape {

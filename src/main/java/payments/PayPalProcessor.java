@@ -1,7 +1,7 @@
 package payments;
 
 /**
- * ✅ PayPalProcessor — implementación correcta de PaymentProcessor
+ *  PayPalProcessor — implementación correcta de PaymentProcessor
  * Cumple el contrato completo, incluyendo refund() vía API de PayPal.
  */
 public class PayPalProcessor implements PaymentProcessor {

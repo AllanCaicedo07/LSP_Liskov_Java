@@ -1,7 +1,7 @@
 package violation;
 
 /**
- * ❌ EJEMPLO DE VIOLACIÓN LSP — Clase Base Rectangle
+ * EJEMPLO DE VIOLACIÓN LSP — Clase Base Rectangle
  *
  * Esta clase define el comportamiento esperado de un rectángulo.
  * El contrato implícito es:

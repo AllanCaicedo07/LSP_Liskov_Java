@@ -1,7 +1,7 @@
 package violation;
 
 /**
- * ❌ TEST QUE DEMUESTRA LA VIOLACIÓN DEL LSP
+ *  TEST QUE DEMUESTRA LA VIOLACIÓN DEL LSP
  *
  * Este test muestra cómo Square rompe el contrato de Rectangle.
  * El método testRectangleArea() espera que cualquier Rectangle
@@ -24,9 +24,9 @@ public class LSPViolationTest {
         System.out.println("Área obtenida  : " + area);
 
         if (area == 15) {
-            System.out.println("✅ Correcto\n");
+            System.out.println(" Correcto\n");
         } else {
-            System.out.println("❌ INCORRECTO — ¡Violación del LSP detectada!\n");
+            System.out.println(" INCORRECTO — ¡Violación del LSP detectada!\n");
         }
     }
 
@@ -34,10 +34,10 @@ public class LSPViolationTest {
         System.out.println("=== TEST DE VIOLACIÓN LSP: Cuadrado / Rectángulo ===\n");
 
         System.out.println("--- Caso 1: Rectangle normal ---");
-        testRectangleArea(new Rectangle()); // ✅ funciona bien
+        testRectangleArea(new Rectangle()); //  funciona bien
 
         System.out.println("--- Caso 2: Square (subtipo incorrecto) ---");
-        testRectangleArea(new Square());    // ❌ ¡rompe el contrato!
+        testRectangleArea(new Square());    //  ¡rompe el contrato!
 
         System.out.println("Conclusión: Square NO puede sustituir a Rectangle.");
         System.out.println("Aunque matemáticamente 'cuadrado ES rectángulo',");

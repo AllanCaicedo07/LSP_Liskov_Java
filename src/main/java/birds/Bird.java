@@ -1,7 +1,7 @@
 package birds;
 
 /**
- * ✅ SOLUCIÓN LSP — Clase base Bird (solo lo que TODOS los pájaros hacen)
+ *  SOLUCIÓN LSP — Clase base Bird (solo lo que TODOS los pájaros hacen)
  *
  * La trampa clásica es incluir fly() aquí, asumiendo que todos los pájaros vuelan.
  * El pingüino no vuela → si hereda Bird con fly(), viola LSP.

@@ -1,7 +1,7 @@
 package payments;
 
 /**
- * ✅ CreditCardProcessor — implementación correcta de PaymentProcessor
+ *  CreditCardProcessor — implementación correcta de PaymentProcessor
  * Cumple TODOS los contratos: procesa, reembolsa y reporta disponibilidad.
  */
 public class CreditCardProcessor implements PaymentProcessor {
@@ -16,7 +16,7 @@ public class CreditCardProcessor implements PaymentProcessor {
     @Override
     public boolean refund(double amount) {
         System.out.println("[CreditCard] Reembolsando $" + amount + "...");
-        // ✅ LSP: soporta reembolso correctamente
+        //  LSP: soporta reembolso correctamente
         return reverseCharge(amount);
     }
 
@@ -28,12 +28,12 @@ public class CreditCardProcessor implements PaymentProcessor {
     // --- Métodos privados de infraestructura (simulados) ---
 
     private boolean chargeCard(double amount) {
-        System.out.println("[CreditCard] ✅ Cargo aprobado por $" + amount);
+        System.out.println("[CreditCard]  Cargo aprobado por $" + amount);
         return true;
     }
 
     private boolean reverseCharge(double amount) {
-        System.out.println("[CreditCard] ✅ Reversa ejecutada por $" + amount);
+        System.out.println("[CreditCard]  Reversa ejecutada por $" + amount);
         return true;
     }
 }

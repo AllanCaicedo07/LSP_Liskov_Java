@@ -1,7 +1,7 @@
 package violation;
 
 /**
- * ❌ VIOLACIÓN DEL LSP — Square extiende Rectangle
+ *  VIOLACIÓN DEL LSP — Square extiende Rectangle
  *
  * Aunque matemáticamente un cuadrado ES un rectángulo,
  * esta herencia ROMPE el principio de sustitución de Liskov.
@@ -15,14 +15,14 @@ public class Square extends Rectangle {
 
     @Override
     public void setWidth(int width) {
-        // ❌ VIOLA LSP: al cambiar ancho, también fuerza el alto
+        //  VIOLA LSP: al cambiar ancho, también fuerza el alto
         this.width = width;
         this.height = width; // fuerza igualdad de lados
     }
 
     @Override
     public void setHeight(int height) {
-        // ❌ VIOLA LSP: al cambiar alto, también fuerza el ancho
+        //  VIOLA LSP: al cambiar alto, también fuerza el ancho
         this.width = height;
         this.height = height;
     }

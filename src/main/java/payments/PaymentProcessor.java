@@ -1,7 +1,7 @@
 package payments;
 
 /**
- * ✅ CONTRATO — Interface PaymentProcessor
+ *  CONTRATO — Interface PaymentProcessor
  *
  * Define el contrato que TODOS los procesadores de pago deben cumplir.
  * Cualquier implementación debe soportar processPayment(), refund() e isAvailable().

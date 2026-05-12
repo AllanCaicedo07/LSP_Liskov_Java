@@ -1,7 +1,7 @@
 package solution_shapes;
 
 /**
- * ✅ Square correcto — hereda de Shape de forma independiente.
+ *  Square correcto — hereda de Shape de forma independiente.
  * No depende de Rectangle. Tiene su propio estado (side)
  * y cumple el contrato de Shape sin efectos secundarios.
  */

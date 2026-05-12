@@ -6,8 +6,8 @@ import java.util.List;
  * TEST — Sistema de Pagos con LSP
  *
  * Demuestra cómo el cliente (processOrder) trabaja con PaymentProcessor
- * sin conocer la implementación concreta (✅ LSP correcto),
- * y qué ocurre cuando una implementación viola el contrato (❌ LSP roto).
+ * sin conocer la implementación concreta ( LSP correcto),
+ * y qué ocurre cuando una implementación viola el contrato ( LSP roto).
  */
 public class PaymentTest {
 
@@ -29,9 +29,9 @@ public class PaymentTest {
     static void processRefund(PaymentProcessor processor, double amount) {
         try {
             boolean refunded = processor.refund(amount);
-            if (refunded) System.out.println("  ✅ Reembolso exitoso.");
+            if (refunded) System.out.println("  Reembolso exitoso.");
         } catch (UnsupportedOperationException e) {
-            System.out.println("  ❌ LSP VIOLADO — " + e.getMessage());
+            System.out.println("   LSP VIOLADO — " + e.getMessage());
         }
     }
 
@@ -43,7 +43,7 @@ public class PaymentTest {
             new PayPalProcessor()
         );
 
-        // ✅ Estos procesadores cumplen el contrato completo
+        //  Estos procesadores cumplen el contrato completo
         for (PaymentProcessor p : processors) {
             System.out.println("--- " + p.getClass().getSimpleName() + " ---");
             processOrder(p, 99.99);
@@ -51,10 +51,10 @@ public class PaymentTest {
             System.out.println();
         }
 
-        // ❌ CryptoProcessor viola LSP — refund() lanza excepción
+        //  CryptoProcessor viola LSP — refund() lanza excepción
         System.out.println("--- CryptoProcessor (VIOLACIÓN LSP) ---");
         PaymentProcessor crypto = new CryptoProcessor();
         processOrder(crypto, 50.00);
-        processRefund(crypto, 50.00); // ❌ Explota aquí
+        processRefund(crypto, 50.00); //  Explota aquí
     }
 }

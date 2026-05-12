@@ -1,7 +1,7 @@
 package solution_shapes;
 
 /**
- * ✅ SOLUCIÓN LSP — Abstracción correcta con Shape
+ *  SOLUCIÓN LSP — Abstracción correcta con Shape
  *
  * En lugar de hacer que Square herede de Rectangle,
  * ambos heredan de Shape. Cada uno define su propia

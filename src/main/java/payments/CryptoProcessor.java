@@ -1,7 +1,7 @@
 package payments;
 
 /**
- * ❌ CryptoProcessor — VIOLACIÓN DEL LSP
+ *  CryptoProcessor — VIOLACIÓN DEL LSP
  *
  * CryptoProcessor implementa PaymentProcessor pero NO puede cumplir
  * el contrato de refund(). Lanzar UnsupportedOperationException
@@ -22,7 +22,7 @@ public class CryptoProcessor implements PaymentProcessor {
 
     @Override
     public boolean refund(double amount) {
-        // ❌ VIOLA LSP: lanza excepción no declarada en el contrato
+        //  VIOLA LSP: lanza excepción no declarada en el contrato
         throw new UnsupportedOperationException(
             "Las transacciones en cripto son irreversibles. No se admiten reembolsos."
         );
@@ -34,7 +34,7 @@ public class CryptoProcessor implements PaymentProcessor {
     }
 
     private boolean broadcastTransaction(double amount) {
-        System.out.println("[Crypto] ✅ Transacción enviada a la blockchain.");
+        System.out.println("[Crypto]  Transacción enviada a la blockchain.");
         return true;
     }
 

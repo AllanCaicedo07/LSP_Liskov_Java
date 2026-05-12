@@ -1,7 +1,7 @@
 package solution_shapes;
 
 /**
- * ✅ Circle — otro subtipo de Shape que cumple el LSP.
+ *  Circle — otro subtipo de Shape que cumple el LSP.
  * Demuestra que se pueden agregar nuevas figuras sin modificar
  * código existente (OCP) y sin romper sustitución (LSP).
  */

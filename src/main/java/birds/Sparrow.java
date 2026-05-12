@@ -1,7 +1,7 @@
 package birds;
 
 /**
- * ✅ Sparrow (Gorrión) — puede volar y comer.
+ *  Sparrow (Gorrión) — puede volar y comer.
  * Implementa Flyable porque realmente vuela.
  * Cumple el contrato de Bird sin efectos inesperados.
  */

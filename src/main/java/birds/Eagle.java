@@ -1,7 +1,7 @@
 package birds;
 
 /**
- * ✅ Eagle (Águila) — otro subtipo de Bird que vuela.
+ * Eagle (Águila) — otro subtipo de Bird que vuela.
  * Muestra que se pueden agregar nuevas aves sin modificar código existente.
  */
 public class Eagle extends Bird implements Flyable {

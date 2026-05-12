@@ -43,8 +43,8 @@ public class BirdTest {
         Penguin p = new Penguin();
         p.swim();
 
-        System.out.println("\n✅ Sin UnsupportedOperationException.");
-        System.out.println("✅ Sin instanceof para verificar si vuela.");
-        System.out.println("✅ Diseño honesto y extensible.");
+        System.out.println("\n Sin UnsupportedOperationException.");
+        System.out.println(" Sin instanceof para verificar si vuela.");
+        System.out.println(" Diseño honesto y extensible.");
     }
 }

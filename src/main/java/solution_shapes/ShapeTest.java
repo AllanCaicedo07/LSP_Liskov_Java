@@ -3,7 +3,7 @@ package solution_shapes;
 import java.util.List;
 
 /**
- * ✅ TEST DE LA SOLUCIÓN LSP CON SHAPES
+ *  TEST DE LA SOLUCIÓN LSP CON SHAPES
  *
  * Demuestra uso polimórfico correcto: el cliente trabaja con Shape
  * sin conocer el tipo concreto. Cualquier Shape puede sustituirse
@@ -41,8 +41,8 @@ public class ShapeTest {
 
         System.out.println("\nÁrea total: " + totalArea(shapes));
 
-        System.out.println("\n✅ Todos los subtipos cumplen el contrato de Shape.");
-        System.out.println("✅ El cliente (totalArea) puede usarlos sin instanceof.");
-        System.out.println("✅ Agregar nuevas figuras no modifica código existente (OCP).");
+        System.out.println("\n Todos los subtipos cumplen el contrato de Shape.");
+        System.out.println(" El cliente (totalArea) puede usarlos sin instanceof.");
+        System.out.println(" Agregar nuevas figuras no modifica código existente (OCP).");
     }
 }
